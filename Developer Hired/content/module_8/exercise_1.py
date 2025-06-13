@@ -1,0 +1,1 @@
+numero = int(input('Digite um número de 0 a 8: '))
