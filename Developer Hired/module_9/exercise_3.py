@@ -21,12 +21,11 @@ serie_a = [
     "Sport"
 ]
 
-print(f'Esses são os times ANTES da mudança: {serie_a}.')
+print(f'Esses são os times ANTES dd remover os quatro últimos: {serie_a}.')
 
 quatro_primeiros = serie_a[:4]
 quatro_ultimos = serie_a[-4:]
 
-serie_a[:4]  = quatro_ultimos
-serie_a[-4:] = quatro_primeiros
+del serie_a[-4:]
 
-print(f'Esses são os times DEPOIS da mudança: {serie_a}.')
+print(f'Esses são os times DEPOIS de remover os quatro últimos: {serie_a}.')
