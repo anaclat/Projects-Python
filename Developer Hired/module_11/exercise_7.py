@@ -21,7 +21,7 @@ serie_a = (
     "Sport"
 )
 
-print(f'Esses são os times da série A: {serie_a}.')
+print(f'Esses são os quatro primeiros times: {serie_a[:4]}.')
 
-for time in serie_a:
+for time in serie_a[:4]:
     print(time)
