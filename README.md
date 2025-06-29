@@ -1,6 +1,6 @@
 ## 🖥️ Python Projects
 
-This file repository small, simple programming projects created just for fun and learning. These beginner-friendly scripts help you practice and better understand basic programming concepts like input handling, conditionals, loops, functions, and data manipulation — all while having a good time coding! 🎉🐍
+This file repository small, simple programming projects created just for fun and learning. These beginner-friendly scripts help you practice and better understand basic programming concepts like input handling, conditionals, loops, functions, and data manipulation — all while having a good time coding!
 
 # About the Projects 📚
 - A variety of mini projects covering topics like number conversions, BMI calculation, simple game simulations, matrix manipulation, and more.
