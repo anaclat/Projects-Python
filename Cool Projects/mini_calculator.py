@@ -1,46 +1,46 @@
 from time import sleep
 
-primeiro_numero = int(input('Digite o primeiro número: '))
-segundo_numero = int(input('Digite o segundo número: '))
-
+first_number = int(input('Enter the first number: '))
+second_number = int(input('Enter the second number: '))
 
 while True:
     print('''
-    Escolha uma opção:
-        [1] somar
-        [2] multiplicar
-        [3] maior e menor
-        [4] trocar números
-        [5] sair do programa
-''')    
+    Choose an option:
+        [1] add
+        [2] multiply
+        [3] greater and smaller
+        [4] change numbers
+        [5] exit the program
+''')
 
-    opcao = int(input('Qual a sua opção? '))
+    option = int(input('What is your option? '))
 
-    if opcao == 1:
-        soma = primeiro_numero + segundo_numero
-        print(f'O resultado de {primeiro_numero} + {segundo_numero} é: {soma}.')
+    if option == 1:
+        addition = first_number + second_number
+        print(f'The result of {first_number} + {second_number} is: {addition}.')
     
-    elif opcao == 2:
-        multiplicacao = primeiro_numero*segundo_numero
-        print(f'O resultado de {primeiro_numero} X {segundo_numero} é: {multiplicacao}.')
+    elif option == 2:
+        multiplication = first_number * second_number
+        print(f'The result of {first_number} x {second_number} is: {multiplication}.')
 
-    elif opcao == 3:
-        if segundo_numero >  primeiro_numero:
-            print(f'{segundo_numero} é maior que {primeiro_numero}.')
-        elif segundo_numero < primeiro_numero:
-             print(f'{primeiro_numero} é maior que {segundo_numero}.')
+    elif option == 3:
+        if second_number > first_number:
+            print(f'{second_number} is greater than {first_number}.')
+        elif second_number < first_number:
+            print(f'{first_number} is greater than {second_number}.')
         else:
-            print(f'Os números são iguais.')
-    elif opcao == 4:
-        print('Informe novos números...')
-        primeiro_numero = int(input('Digite o primeiro número: '))
-        segundo_numero = int(input('Digite o segundo número: '))
+            print('The numbers are equal.')
 
-    elif opcao == 5:
-        print('Finalizando...')
+    elif option == 4:
+        print('Enter new numbers...')
+        first_number = int(input('Enter the first number: '))
+        second_number = int(input('Enter the second number: '))
+
+    elif option == 5:
+        print('Exiting...')
         sleep(2)
-        print('Fim do programa.')
+        print('Program ended.')
         break
 
     else:
-        print('Digite uma opção válida!')
+        print('Please enter a valid option!')
