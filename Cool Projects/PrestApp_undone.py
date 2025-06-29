@@ -11,7 +11,7 @@ def calcular_prestacao(valor_casa: float, salario: float, anos: int) -> dict:
 
     meses = anos * 12
     prestacao = valor_casa / meses
-    limite = salario * 0.33  # 33% do salário
+    limite = salario * 0.33 
 
     if prestacao <= limite:
         aprovado = True
@@ -31,7 +31,6 @@ def calcular_prestacao(valor_casa: float, salario: float, anos: int) -> dict:
     }
 
 
-# Exemplo de uso direto (poderia vir de um formulário de app)
 if __name__ == "__main__":
     try:
         casa = float(input("Enter the house value (R$): "))
@@ -40,7 +39,6 @@ if __name__ == "__main__":
 
         resultado = calcular_prestacao(casa, salario, anos)
 
-        # Saída simulando JSON
         print("\nResult:")
         for chave, valor in resultado.items():
             print(f"{chave}: {valor}")
