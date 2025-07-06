@@ -13,8 +13,8 @@ def relatorio_valores(valores):
     posicoes_menor = [i for i, v in enumerate(valores) if v == menor]
 
     print('\nRELATÓRIO:')
-    print(f'O MAIOR número é: {maior}, nas posições: {posicoes_maior}')
-    print(f'O MENOR número é: {menor}, nas posições: {posicoes_menor}')
+    print(f'O MAIOR número é: {maior}, nas posições: {posicoes_maior}.')
+    print(f'O MENOR número é: {menor}, nas posições: {posicoes_menor}.')
 
 valores = adicionar_tupla()
 relatorio_valores(valores)
