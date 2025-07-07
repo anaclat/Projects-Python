@@ -1,4 +1,8 @@
+from datetime import date
+
 class Abada:
+
+    dia_de_hoje = date.today()
 
     def  __init__(self):
 
@@ -13,46 +17,36 @@ class Abada:
         self.bonito = True
 
     # MÉTODOS / ATRIBUTOS
+    # MÉTODO DE INSTÂNCIA (SELF)
     def vestir(self):
-        print(f'Estou vestindo o meu ABADÁ...')
+        if self.limpo is True:
+            print(f'Estou vestindo o meu ABADÁ...')
+        else:
+            print(f'Não vista o ABADÁ da festa {self.nome_festa}')
 
-    def rasgar(self):
-        print('Estou rasgando o meu ABADÁ...')
+    # MÉTODO DE CLASSE
+    @classmethod
+    def sujar(cls):
+        print('Estou sujando o meu ABADÁ...')
 
-    def bordar(self):
-        print('Estou bordando o meu ABADÁ...')
-
-
-objeto_abada_1  = Abada()
-objeto_abada_1.cor = 'Azul'
-objeto_abada_1.tamanho = 'P'
-objeto_abada_1.tecido = 'Cetim'
-objeto_abada_1.nome_festa =  'Feijoada do Cacau'
-
-
-print(f'OBJETO ABADA 1: {objeto_abada_1}.')
-print(f'Cor: {objeto_abada_1.cor}.')
-print(f'Tamanho: {objeto_abada_1.tamanho}.')
-print(f'Tecido: {objeto_abada_1.tecido}.')
-print(f'Nome da festa: {objeto_abada_1.nome_festa}.')
-print(f'Limpo: {objeto_abada_1.limpo}.')
-print(f'Bonito: {objeto_abada_1.bonito}.')
-
-print('*'  * 80)
-
-objeto_abada_2  = Abada()
-objeto_abada_2.cor = 'Vermelho'
-objeto_abada_2.tamanho = 'M'
-objeto_abada_2.tecido = 'Lã'
-objeto_abada_2.nome_festa =  'Carnaval 2025'
+    # MÉTODO ESTÁTICO
+    @staticmethod
+    def cortar():
+        print('Estou cortando o meu ABADÁ...')
 
 
-print(f'OBJETO ABADA 2: {objeto_abada_2}.')
-print(f'Cor: {objeto_abada_2.cor}.')
-print(f'Tamanho: {objeto_abada_2.tamanho}.')
-print(f'Tecido: {objeto_abada_2.tecido}.')
-print(f'Nome da festa: {objeto_abada_2.nome_festa}.')
-print(f'Limpo: {objeto_abada_2.limpo}.')
-print(f'Bonito: {objeto_abada_2.bonito}.')
+print(Abada.dia_de_hoje)
 
-objeto_abada_2.vestir()
+# INSTÂNCIA
+objeto_abada  = Abada()
+objeto_abada.nome_festa = 'Feijoada da Ana.'
+objeto_abada.limpo = False
+objeto_abada.vestir()
+
+# CLASSE
+Abada.sujar()
+
+# ESTÁTICO
+objeto = Abada()
+objeto.cortar()
+Abada.cortar()
