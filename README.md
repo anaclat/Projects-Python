@@ -23,5 +23,3 @@ These projects are personal learning exercises, but feel free to share ideas, im
 ## Courses 📚
 - Desenvolvedor Contratado
 - Codédex (codedex.com)
-
-# Enjoy coding and keep exploring! 🔥👩‍💻👨‍💻
