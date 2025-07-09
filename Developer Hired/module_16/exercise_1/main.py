@@ -85,7 +85,6 @@ def mostrar_dados(trabalhador):
         print('Não possui carteira de trabalho registrada.')
 
 def main():
-    #Função principal do programa.
     trabalhador = cadastrar_trabalhador()
     mostrar_dados(trabalhador)
 
